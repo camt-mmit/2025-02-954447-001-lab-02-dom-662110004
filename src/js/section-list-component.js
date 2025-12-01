@@ -42,7 +42,7 @@ export default function (componentElem) {
     );
 
     [...componentElem.querySelectorAll(".app-out-number")].forEach(
-      (elem) => (elem.textContent = result.toLocaleString())
+      (elem) => (elem.textContent = result)
     );
   };
 
@@ -81,3 +81,7 @@ export default function (componentElem) {
 
   return componentElem;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  createInputListComponent(document.querySelector("body"));
+});
