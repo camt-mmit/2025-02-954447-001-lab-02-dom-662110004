@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/javascript" src="./js/dom-03-template.js"></script>
+    <link rel="stylesheet" href="./css/dom.css">
+    <title>DOM-03: Template</title>
+</head>
+
+<body>
+    <button class="app-cmd-add-number-input">Add</button>
+
+    <div class="app-cmp-number-list">
+        <template class="app-tmp-number-component">
+            <!-- จะไม่ render สิ่งที่อยู่ใน template นี้ ซึ่งสามารถนำ template นี้ไปวางใน file อื่น ๆ ได้ -->
+            <div class="app-cmp-number">
+                <label for="">
+                    <b>Number <span class="app-title-number"></span>:</b>
+                    <input type="number" name="" class="app-inp-number" id="">
+                </label>
+            </div>
+        </template>
+    </div>
+
+    <label for="">
+        <b>Result: </b>
+        <output class="app-out-number">0</output>
+    </label>
+
+</body>
+
+</html>
