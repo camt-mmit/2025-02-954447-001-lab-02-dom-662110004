@@ -81,7 +81,3 @@ export default function (componentElem) {
 
   return componentElem;
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  createInputListComponent(document.querySelector("body"));
-});
